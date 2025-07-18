@@ -38,7 +38,12 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
     line-height: 1.2;
@@ -248,6 +253,7 @@ h1, h2, h3, h4, h5, h6 {
     flex: 1;
     position: relative;
     z-index: 2;
+
 }
 
 .hero-bg {
@@ -261,6 +267,17 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid rgba(255, 255, 255, 0.2);
     opacity: 0;
     animation: fadeInScale 1s ease 1.5s forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-bg img {
+    scale: 0.8;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
 }
 
 /* Categories Section */
@@ -403,6 +420,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     position: relative;
     overflow: hidden;
+}
+
+.watch-placeholder img,
+.perfume-placeholder img {
+    width: 100%;
+    height: auto;
 }
 
 .watch-placeholder::before,
@@ -993,6 +1016,7 @@ h1, h2, h3, h4, h5, h6 {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1004,6 +1028,7 @@ h1, h2, h3, h4, h5, h6 {
         opacity: 0;
         transform: scale(0.8);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
@@ -1015,7 +1040,7 @@ h1, h2, h3, h4, h5, h6 {
     .hamburger {
         display: flex;
     }
-    
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -1028,72 +1053,72 @@ h1, h2, h3, h4, h5, h6 {
         box-shadow: var(--shadow);
         padding: 2rem 0;
     }
-    
+
     .nav-menu.active {
         left: 0;
     }
-    
+
     .nav-menu li {
         margin: 1rem 0;
     }
-    
+
     .container {
         padding: 0 1rem;
     }
-    
+
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.2rem;
     }
-    
+
     .page-title {
         font-size: 2rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .category-card {
         flex-direction: column;
         text-align: center;
         padding: 2rem;
     }
-    
+
     .category-card.reverse {
         flex-direction: column;
     }
-    
+
     .brands-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .story-content,
     .global-content {
         flex-direction: column;
     }
-    
+
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .global-stats {
         justify-content: space-around;
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .toggle-buttons {
         flex-wrap: wrap;
     }
-    
+
     .products-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
@@ -1103,27 +1128,27 @@ h1, h2, h3, h4, h5, h6 {
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1rem;
     }
-    
+
     .category-title {
         font-size: 2rem;
     }
-    
+
     .cta-card {
         padding: 2rem;
     }
-    
+
     .product-card {
         margin-bottom: 1rem;
     }
-    
+
     .nav-container {
         padding: 1rem;
     }
-    
+
     .brand-name {
         font-size: 1.2rem;
     }
